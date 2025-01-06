@@ -12,16 +12,34 @@
 <body>
     <header>
         <nav>
-            <h3 class="section-title">Influencer products</h3>
-            <ul>
+            <div class="menu-icon">
+                <img src="logos/menu.svg" alt="" onclick="toggleMenu()">
+            </div>
+            <h3 class="section-title">Influencer</h3>
+            <ul id="menuList">
                 <li><a href="">Home</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">Sign up</a></li>
                 <li><a href="">Log In</a></li>
+            </ul>
+            <div class="nav-icons">
                 <img class="search-icon" src="logos/search_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="">
                 <img class="cart-icon" src="logos/shopping_cart_24dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.png" alt="">
-            </ul>
+            </div>
         </nav>
+        <script>
+            let menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
+
+            function toggleMenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "300px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
         <div class="header-columns">
             <div class="head-column-1">
                 <h1 class="section-title">Start your Journey as Influencer</h1>
@@ -31,7 +49,6 @@
                         alt=""></button>
             </div>
             <div class="head-column-2">
-                <img src="images/Circle design.svg" alt="">
                 <img class="main-camera" src="images/main-camera.png" alt="">
             </div>
         </div>

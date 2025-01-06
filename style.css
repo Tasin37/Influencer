@@ -9,6 +9,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.menu-icon{
+    display: none;
+}
 nav > ul{
     display: flex;
 }
@@ -68,7 +71,110 @@ nav li a{
     text-align: right;
 }
 .main-camera{
-    position: relative;
-    bottom: 450px;
-    right: 30px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 10px;
+    }
+    
+    .nav-icons img {
+        margin-right: 10px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        text-align: left;
+        flex-direction: column;
+        background: #E02C6D;
+        width: 50%;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .header-columns{
+        flex-direction: column-reverse;
+    }
+    .head-column-1,
+    .head-column-2{
+        width: 100%;
+        text-align: center;
+    }
+    .head-column-1>h1{
+        font-size: 28px;
+    }
+    .head-column-2 img{
+        max-width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+@media  screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 30px;
+    }
+    
+    .nav-icons img {
+        margin-right: 10px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        text-align: left;
+        flex-direction: column;
+        background: #E02C6D;
+        width: 50%;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .header-columns{
+        flex-direction: column-reverse;
+    }
+    .head-column-1,
+    .head-column-2{
+        width: 100%;
+        text-align: center;
+    }
+    .head-column-1>h1{
+        font-size: 28px;
+    }
+    .head-column-2 img{
+        max-width: 100%;
+    }
 }

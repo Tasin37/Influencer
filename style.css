@@ -192,4 +192,10 @@ nav li a{
     .head-column-2 img{
         max-width: 100%;
     }
+    .partners{
+        max-width: 90%;
+    }
+    .partners img{
+        width: 60px;
+    }
 }

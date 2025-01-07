@@ -137,7 +137,21 @@ nav li a{
     background: white;
     align-items: center;
 }
-
+.featured{
+    display: flex;
+    gap: 80px;
+    max-width: 69rem;
+    margin: 40px auto 0;
+}
+.featured-col-2>h2{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #0A0826;
+}
+.featured-col-2>p{
+    font-weight: 700;
+    color: #6C6C6C;
+}
 
 
 
@@ -174,7 +188,8 @@ nav li a{
     nav ul li{
         padding: 20px;
     }
-    .header-columns{
+    .header-columns,
+    .featured{
         flex-direction: column-reverse;
     }
     .head-column-1,
@@ -200,6 +215,26 @@ nav li a{
     .box{
         padding-left: 30px;
         padding-top: 30px;
+        margin: 0 auto;
+    }
+    .featured{
+        gap: 30px;
+    }
+    .featured-col-1{
+        margin: 0 auto;
+    }
+    .featured-col-1 img{
+        width: 300px;
+    }
+    .featured-col-2{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 370px;
+    }
+    .featured-col-2>h2{
+        font-size: 24px;
+    }
+    .featured-col-2 button{
         margin: 0 auto;
     }
 }
@@ -239,7 +274,8 @@ nav li a{
     nav ul li{
         padding: 20px;
     }
-    .header-columns{
+    .header-columns,
+    .featured{
         flex-direction: column-reverse;
     }
     .head-column-1,
@@ -265,6 +301,18 @@ nav li a{
     .box{
         padding-left: 30px;
         padding-top: 30px;
+        margin: 0 auto;
+    }
+    .featured{
+        align-items: center;
+        gap: 30px;
+    }
+    .featured-col-2{
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .featured-col-2 button{
         margin: 0 auto;
     }
 }

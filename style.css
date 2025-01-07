@@ -124,6 +124,19 @@ nav li a{
     gap: 10px;
     margin-bottom: 0;
 }
+.see-more-btn{
+    max-width: 65.5rem;
+    margin: 40px auto 0;
+    text-align: right;
+}
+.see-more-btn button{
+    color: #E02C6D;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+    background: white;
+    align-items: center;
+}
 
 
 
